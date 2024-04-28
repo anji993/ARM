@@ -5,11 +5,11 @@ import numpy as np
 from omegaconf import DictConfig
 from rlbench.backend.observation import Observation
 from rlbench.demo import Demo
-from yarr.envs.env import Env
-from yarr.replay_buffer.prioritized_replay_buffer import \
+from yarr2.envs.env import Env
+from yarr2.replay_buffer.prioritized_replay_buffer import \
     PrioritizedReplayBuffer, ObservationElement
-from yarr.replay_buffer.replay_buffer import ReplayElement, ReplayBuffer
-from yarr.replay_buffer.uniform_replay_buffer import UniformReplayBuffer
+from yarr2.replay_buffer.replay_buffer import ReplayElement, ReplayBuffer
+from yarr2.replay_buffer.uniform_replay_buffer import UniformReplayBuffer
 
 from arm import demo_loading_utils, utils
 from arm.custom_rlbench_env import CustomRLBenchEnv

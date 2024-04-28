@@ -19,18 +19,18 @@ from rlbench.action_modes.arm_action_modes import EndEffectorPoseViaPlanning
 from rlbench.action_modes.gripper_action_modes import Discrete
 from rlbench.backend import task
 from rlbench.backend.utils import task_file_to_task_class
-from yarr.replay_buffer.wrappers.pytorch_replay_buffer import \
+from yarr2.replay_buffer.wrappers.pytorch_replay_buffer import \
     PyTorchReplayBuffer
-from yarr.runners.env_runner import EnvRunner
-from yarr.runners.pytorch_train_runner import PyTorchTrainRunner
-from yarr.utils.stat_accumulator import SimpleAccumulator
+from yarr2.runners.env_runner import EnvRunner
+from yarr2.runners.pytorch_train_runner import PyTorchTrainRunner
+from yarr2.utils.stat_accumulator import SimpleAccumulator
 
 from arm import arm, c2farm, lpr, qte
 from arm.baselines import bc, td3, dac, sac
 from arm.custom_rlbench_env import CustomRLBenchEnv
 from pyrep.const import RenderMode
 
-from yarr.utils.rollout_generator import RolloutGenerator
+from yarr2.utils.rollout_generator import RolloutGenerator
 
 
 def _create_obs_config(camera_names: List[str], camera_resolution: List[int]):

@@ -5,10 +5,10 @@ from rlbench import ObservationConfig, ActionMode
 from rlbench.backend.exceptions import InvalidActionError
 from rlbench.backend.observation import Observation
 from rlbench.backend.task import Task
-from yarr.agents.agent import ActResult, VideoSummary
-from yarr.envs.rlbench_env import RLBenchEnv
-from yarr.utils.observation_type import ObservationElement
-from yarr.utils.transition import Transition
+from yarr2.agents.agent import ActResult, VideoSummary
+from yarr2.envs.rlbench_env import RLBenchEnv
+from yarr2.utils.observation_type import ObservationElement
+from yarr2.utils.transition import Transition
 
 from pyrep.const import RenderMode
 from pyrep.errors import IKError, ConfigurationPathError
